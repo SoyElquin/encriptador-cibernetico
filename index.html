@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Cibernético</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Encriptador Cibernético</h1>
+        <div class="contenedor">
+            <div class="columna">
+                <h2>Introduce el texto aquí</h2>
+                <p class="nota">Solo letras minúsculas y sin acentos</p>
+                <textarea id="textoEntrada" placeholder="Escribe aquí tu texto..."></textarea>
+                <div class="botones">
+                    <button id="btnEncriptar">Encriptar</button>
+                    <button id="btnDesencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <div class="columna">
+                <img src="imagen.png" alt="Imagen cibernética" id="imagenCibernetica">
+                <h3 id="estadoResultado">Ningún mensaje fue encontrado</h3>
+                <p id="textoHistorial">Aquí aparecerá el historial de encriptaciones</p>
+                <div id="resultado"></div>
+                <button id="btnCopiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Creado por Elquin Hernández - Septiembre 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
