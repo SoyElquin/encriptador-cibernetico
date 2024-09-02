@@ -1,36 +1,63 @@
 <!DOCTYPE html>
+<!--<!DOCTYPE html> Declara el tipo de documento y la versión de HTML que se está utilizando (HTML5 en este caso). -->
 <html lang="es">
+<!--<html lang="es" Define el lenguaje principal del documento como español. -->
 <head>
+    <!--<head> Contiene metadatos y recursos externos para el documento. -->
     <meta charset="UTF-8">
+    <!--<meta charset="UTF-8"> Define la codificación de caracteres para el documento como UTF-8, que soporta caracteres especiales. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> Asegura que el diseño sea responsivo en dispositivos móviles, ajustando el ancho de la vista al tamaño del dispositivo. -->
     <title>Encriptador Cibernético</title>
+    <!--<title>Encriptador Cibernertico</title> Define el título de la página que se muestra en la pestaña del navegador. -->
     <link rel="stylesheet" href="styles.css">
+    <!--<link rel="stylesheet" href="styles.css"> Enlaza un archivo CSS externo (styles.css) que contiene los estilos para la página. -->
 </head>
 <body>
+    <!--<body>Contiene el contenido visible de la página. -->
     <main>
+        <!--<main> Representa el contenido principal del documento. -->
         <h1>Encriptador Cibernético</h1>
+        <!--<h1> Título principal de la página. -->
         <div class="contenedor">
+            <!--<div class="contenedor"> Contenedor principal para agrupar elementos. -->
             <div class="columna">
+                <!--<div class="columna>" Una columna para agrupar elementos relacionados. -->
                 <h2>Introduce el texto aquí</h2>
+                <!--<h2>Introduce el texto aquí</h2> Subtítulo para la sección de entrada de texto. -->
                 <p class="nota">Solo letras minúsculas y sin acentos</p>
-                <textarea id="textoEntrada" placeholder="Escribe aquí tu texto..."></textarea>
+                <!--<p class="nota">Solo letras minúsculas y sin acentos</p> Nota que indica las restricciones del texto que debe ingresar el usuario. -->
+                <textarea id="textoEntrada"></textarea>
+                <!--<textarea id="textoEntrada"></textarea> Área de texto donde el usuario puede ingresar el texto para encriptar o desencriptar. -->
                 <div class="botones">
+                    <!-- Contenedor para los botones de acción. -->
                     <button id="btnEncriptar">Encriptar</button>
+                    <!-- Botón para encriptar el texto ingresado. -->
                     <button id="btnDesencriptar">Desencriptar</button>
+                    <!-- Botón para desencriptar el texto ingresado. -->
                 </div>
             </div>
             <div class="columna">
+                <!-- Otra columna para agrupar otros elementos relacionados. -->
                 <img src="imagen.png" alt="Imagen cibernética" id="imagenCibernetica">
+                <!-- Imagen que acompaña al contenido, con un texto alternativo para accesibilidad. -->
                 <h3 id="estadoResultado">Ningún mensaje fue encontrado</h3>
+                <!-- Mensaje que indica el estado actual de la operación (encriptado/desencriptado). -->
                 <p id="textoHistorial">Aquí aparecerá el historial de encriptaciones</p>
+                <!-- Área donde se mostrará el historial de encriptaciones. -->
                 <div id="resultado"></div>
+                <!-- Contenedor donde se mostrará el resultado de la encriptación o desencriptación. -->
                 <button id="btnCopiar">Copiar</button>
+                <!-- Botón para copiar el resultado al portapapeles. -->
             </div>
         </div>
     </main>
     <footer>
+        <!-- Contiene la información del pie de página. -->
         <p>Creado por Elquin Hernández - Septiembre 2024</p>
+        <!-- Información de crédito y fecha de creación del documento. -->
     </footer>
     <script src="script.js"></script>
+    <!-- Enlaza un archivo JavaScript externo (script.js) que contiene el código para la funcionalidad de la página. -->
 </body>
 </html>
