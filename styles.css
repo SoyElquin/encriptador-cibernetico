@@ -1,124 +1,183 @@
 body {
+    /*font-family: 'Courier New', monospace; Define la fuente por defecto para todo el documento, usando una fuente monoespaciada. */
     font-family: 'Courier New', monospace;
+    /*background-color: #0a0a2a; Establece un color de fondo oscuro para la página. */
     background-color: #0a0a2a;
+    /*color: #00ffff Define el color del texto como un tono cian brillante. */
     color: #00ffff;
+    /*margin: 0; Elimina los márgenes por defecto del body para que no haya espacio alrededor de la página. */
     margin: 0;
+    /*padding: 0; Elimina el padding por defecto para asegurar que el contenido ocupe todo el ancho de la página. */
     padding: 0;
 }
 
 main {
+    /*max-width: 1200px Limita el ancho máximo del contenido principal a 1200 píxeles para mantenerlo centrado y legible. */
     max-width: 1200px;
+    /*margin: 0 auto; Centra el contenido horizontalmente, auto ajusta el margen izquierdo y derecho. */
     margin: 0 auto;
+    /*padding: 20px; Añade un padding interno para evitar que el contenido toque los bordes. */
     padding: 20px;
 }
 
 h1 {
+    /*text-align: center; Centra el texto del título horizontalmente. */
     text-align: center;
+    /*color: #ff00ff Cambia el color del título a un tono magenta brillante. */
     color: #ff00ff;
+    /*text-shadow: 0 0 10px #ff00ff; Añade un efecto de sombra brillante alrededor del texto del título. */
     text-shadow: 0 0 10px #ff00ff;
 }
 
 .contenedor {
+    /*.contenedor Utiliza un diseño flexible para permitir que los elementos hijos se alineen en fila. */
     display: flex;
+    /* Añade un espacio de 20 píxeles entre los elementos hijos (columnas) dentro del contenedor. */
     gap: 20px;
 }
 
 .columna {
+    /* Permite que las columnas crezcan para llenar el espacio disponible equitativamente. */
     flex: 1;
+    /* Establece un color de fondo semitransparente para las columnas, dando un aspecto de sobreposición. */
     background-color: rgba(255, 255, 255, 0.1);
+    /* Redondea las esquinas de las columnas para suavizar su apariencia. */
     border-radius: 10px;
+    /* Añade un padding interno a las columnas para que el contenido no toque los bordes. */
     padding: 20px;
+    /* Añade una sombra alrededor de las columnas para darles un efecto tridimensional. */
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 textarea, #resultado {
+    /* Define una altura fija para el área de texto y el contenedor de resultados. */
     height: 200px;
-    width: calc(100% - 20px); 
+    /* Hace que el ancho ocupe el 100% del contenedor padre menos 20 píxeles para un pequeño margen interno. */
+    width: calc(100% - 20px);
+    /* Establece un color de fondo oscuro y semitransparente, destacando el área de entrada de texto. */
     background-color: rgba(0, 0, 0, 0.5);
+    /* Aplica un borde cian alrededor del área de texto para destacarla. */
     border: 2px solid #00ffff;
+    /* Redondea ligeramente las esquinas del área de texto. */
     border-radius: 5px;
+    /* Define el color del texto dentro del área de texto para que sea cian. */
     color: #00ffff;
+    /* Añade un padding interno para separar el texto de los bordes. */
     padding: 10px;
+    /* Añade un margen inferior para separar el área de texto de otros elementos. */
     margin-bottom: 10px;
-
 }
 
 button {
+    /* Establece un color de fondo magenta para los botones. */
     background-color: #ff00ff;
+    /* Cambia el color del texto de los botones a blanco para un alto contraste. */
     color: #ffffff;
+    /* Elimina cualquier borde por defecto de los botones. */
     border: none;
+    /* Define el tamaño del padding interno del botón, ajustando su tamaño y área de clic. */
     padding: 10px 20px;
+    /* Añade un pequeño margen alrededor de los botones para separarlos de otros elementos. */
     margin: 5px;
+    /* Redondea ligeramente las esquinas de los botones. */
     border-radius: 5px;
+    /* Cambia el cursor a un puntero al pasar sobre el botón para indicar que es clicable. */
     cursor: pointer;
+    /* Añade una transición suave en todas las propiedades del botón que cambien. */
     transition: all 0.3s ease;
 }
 
 button:hover {
+    /* Cambia el color de fondo del botón al pasar el cursor sobre él, usando cian. */
     background-color: #00ffff;
+    /* Cambia el color del texto del botón a un tono oscuro para mantener el contraste. */
     color: #0a0a2a;
+    /* Añade una sombra brillante alrededor del botón al pasar el cursor sobre él. */
     box-shadow: 0 0 10px #00ffff;
 }
 
 #imagenCibernetica {
+    /* Limita el ancho máximo de la imagen al 100% del contenedor padre para que sea responsiva. */
     max-width: 100%;
+    /* Ajusta automáticamente la altura de la imagen para mantener la proporción. */
     height: auto;
+    /* Hace que la imagen se muestre como un bloque y la centra horizontalmente en su contenedor. */
     display: block;
+    /* Añade un margen inferior a la imagen para separarla de otros elementos. */
     margin: 0 auto 20px;
 }
 
 .nota {
+    /* Define un tamaño de fuente más pequeño para las notas informativas. */
     font-size: 0.8em;
+    /* Cambia el color de la nota a un tono magenta brillante. */
     color: #ff00ff;
 }
 
 footer {
+    /* Centra el texto dentro del pie de página. */
     text-align: center;
+    /* Añade un padding interno al pie de página para darle espacio alrededor del texto. */
     padding: 20px;
+    /* Define un color de fondo semitransparente similar al de las columnas, dando cohesión al diseño. */
     background-color: rgba(255, 255, 255, 0.1);
+    /* Cambia el color del texto del pie de página a cian. */
     color: #00ffff;
 }
 
-
-
 #textoHistorial {
+    /* Limita la altura máxima del contenedor de historial, añadiendo un scrollbar si se excede. */
     max-height: 300px;
+    /* Habilita el scroll vertical en caso de que el contenido exceda la altura máxima. */
     overflow-y: auto;
+    /* Añade un padding interno al contenedor de historial para separar el texto de los bordes. */
     padding: 10px;
+    /* Establece un color de fondo oscuro y semitransparente para el contenedor de historial. */
     background-color: rgba(0, 0, 0, 0.3);
+    /* Redondea las esquinas del contenedor de historial. */
     border-radius: 5px;
 }
 
 #textoHistorial hr {
+    /* Elimina el borde por defecto de la línea horizontal. */
     border: 0;
+    /* Define una altura mínima para la línea horizontal. */
     height: 1px;
+    /* Crea un efecto de degradado cian en la línea horizontal. */
     background-image: linear-gradient(to right, rgba(0, 255, 255, 0), rgba(0, 255, 255, 0.75), rgba(0, 255, 255, 0));
+    /* Añade un margen vertical para separar las secciones dentro del historial. */
     margin: 10px 0;
 }
 
 #textoHistorial p {
+    /* Define un margen vertical pequeño para los párrafos dentro del historial. */
     margin: 5px 0;
 }
 
 #imagenCibernetica.hidden {
+    /* Cambia la opacidad de la imagen a 0, haciéndola invisible, sin eliminarla del documento. */
     opacity: 0;
 }
 
-
-/* Estilo para version movil */
+/* Estilos específicos para pantallas pequeñas (dispositivos móviles). */
 @media (max-width: 768px) {
     .contenedor {
+        /* Cambia la dirección de los elementos flexibles a columna para un mejor ajuste en pantallas pequeñas. */
         flex-direction: column;
     }
 
     /* Corrección del error de la caja de texto*/
     textarea, #resultado {
+        /* Ajusta el ancho de las áreas de texto en pantallas pequeñas, asegurando que ocupen todo el ancho disponible. */
         width: calc(100% - 20px); 
+        /* Ajusta la altura de las áreas de texto en pantallas pequeñas para que se adapten al contenido. */
         height: auto; 
+        /* Incluye el padding y borde en el cálculo del ancho y altura, mejorando la precisión del layout. */
         box-sizing: border-box; 
     }
 
     .columna {
+        /* Reduce el padding interno de las columnas en pantallas pequeñas para aprovechar mejor el espacio. */
         padding: 10px;
     }
 }
