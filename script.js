@@ -1,4 +1,4 @@
-// Declaracion de constantes
+// Declaracion de constantes - prueba
 const textoEntrada = document.getElementById('textoEntrada');
 const btnEncriptar = document.getElementById('btnEncriptar');
 const btnDesencriptar = document.getElementById('btnDesencriptar');
